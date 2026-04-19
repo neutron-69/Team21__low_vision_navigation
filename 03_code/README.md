@@ -74,11 +74,11 @@ curl -L -o MiDAS/weights/dpt_levit_224.pt \
 ```bash
 mkdir -p ../04_data/sample_inputs
 curl -L -o ../04_data/sample_inputs/road.jpg \
-    https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/road.jpg
+    https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/road.jpg
 curl -L -o ../04_data/sample_inputs/road2.png \
-    https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/road2.png
+    https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/road2.png
 curl -L -o ../04_data/sample_inputs/sample1.mp4 \
-    https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/sample2.mp4
+    https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/sample2.mp4
 ```
 
 ---

@@ -65,8 +65,8 @@ OUTPUT: Audio Guidance + Annotated Video
 **1. Clone Repository**
 
 ```bash
-git clone https://github.com/neutron-69/Team21_low_vision_navigation.git
-cd Team21_low_vision_navigation/03_code
+git clone https://github.com/neutron-69/Team21__low_vision_navigation.git
+cd Team21__low_vision_navigation/03_code
 ```
 
 **2. Clone MiDaS Repository (required)**
@@ -113,10 +113,10 @@ Download the sample media to run the examples:
 ```bash
 mkdir -p ../04_data/sample_inputs
 # Download sample images and videos via curl
-curl -L -o ../04_data/sample_inputs/road2.png https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/road2.png
-curl -L -o ../04_data/sample_inputs/sample1.mp4 https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/sample1.mp4
-curl -L -o ../04_data/sample_inputs/sample2.mp4 https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/sample2.mp4
-curl -L -o ../04_data/sample_inputs/sample_2.mp4 https://github.com/neutron-69/Team21_low_vision_navigation/releases/download/samples/sample_2.mp4
+curl -L -o ../04_data/sample_inputs/road2.png https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/road2.png
+curl -L -o ../04_data/sample_inputs/sample1.mp4 https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/sample1.mp4
+curl -L -o ../04_data/sample_inputs/sample2.mp4 https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/sample2.mp4
+curl -L -o ../04_data/sample_inputs/sample_2.mp4 https://github.com/neutron-69/Team21__low_vision_navigation/releases/download/samples/sample_2.mp4
 ```
 
 ---
