@@ -1,0 +1,32 @@
+"""Evaluation configuration"""
+
+# Evaluation source
+SOURCE: null  # Path to test video
+MAX_FRAMES: 60
+
+# Benchmark type
+EVAL_TYPE: "latency"  # latency or accuracy
+
+# Latency benchmark
+MEASURE_FPS: true
+MEASURE_LATENCY: true
+MEASURE_FLICKER: true
+
+# Accuracy metrics
+HAZARD_DETECTION_ENABLED: true
+HAZARD_DEPTH_THRESHOLD: 0.55
+HAZARD_AREA_THRESHOLD: 0.015
+FALSE_ALARM_THRESHOLD: 0.3
+
+# Ablation settings
+RUN_ABLATIONS: false
+ABLATION_COMPONENTS:
+  - tracker
+  - temporal_reasoning
+  - fov_aware_depth
+  - road_detection
+
+# Output
+OUTPUT_CSV: "../../05_results/ablations_measured.csv"
+OUTPUT_DIR: "../../05_results/figures/"
+PRINT_RESULTS: true

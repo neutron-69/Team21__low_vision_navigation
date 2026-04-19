@@ -1,0 +1,45 @@
+"""Inference configuration"""
+
+# Input source
+SOURCE: null  # Path to image/video or camera ID
+IMAGE_PATH: null
+VIDEO_SOURCE: null
+
+# Processing
+FRAME_SAMPLE_INTERVAL_MS: 300
+RESIZE_SCALE: 0.6
+ADAPTIVE_SAMPLING: true
+MAX_FRAMES: null  # None = process entire video
+
+# Output
+SAVE_OUTPUT_VIDEO: true
+SAVE_FRAMES: false
+OUTPUT_FORMAT: "mp4"
+OUTPUT_PATH: "../../05_results/figures/outputs/"
+
+# Features
+USE_TTS: true
+DISPLAY_REALTIME: true
+DISPLAY_METRICS: true
+DISPLAY_DEPTH_MAP: false
+
+# Detection thresholds
+CONFIDENCE_THRESHOLD: 0.2
+MIN_DETECTION_AREA: 0.0005
+
+# Spatial reasoning
+USE_FOV_AWARE_DEPTH: true
+USE_DEPTH_SMOOTHING: true
+
+# Tracking
+ENABLE_TRACKER: true
+MAX_TRACK_AGE: 6
+
+# Temporal smoothing
+ENABLE_TEMPORAL_SMOOTHING: true
+SMOOTHING_WINDOW: 3
+
+# Road detection
+ENABLE_ROAD_DETECTION: true
+CORRIDOR_GUIDANCE: true
+EDGE_GUIDANCE: true

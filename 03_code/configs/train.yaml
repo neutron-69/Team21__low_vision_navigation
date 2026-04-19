@@ -1,0 +1,46 @@
+"""Training configuration for YOLOv8 fine-tuning on IDD"""
+
+# Dataset
+DATASET_PATH: "../../04_data/idd_data.yaml"
+DATASET_NAME: "Indian Driving Dataset (IDD)"
+
+# Model
+BASE_MODEL: "yolov8n.pt"  # nano for speed, nano/small/medium/large/xlarge
+INPUT_SIZE: 640
+PRETRAINED: true
+
+# Training hyperparameters
+EPOCHS: 50
+BATCH_SIZE: 16
+LEARNING_RATE: 0.001
+MOMENTUM: 0.937
+WEIGHT_DECAY: 0.0005
+LR_SCHEDULER: "cosine"
+
+# Augmentation
+AUGMENTATION: true
+MOSAIC: 1.0
+MIXUP: 0.0
+HSANV_AUGMENT: 0.015
+FLIPLR: 0.5
+FLIPUD: 0.0
+DEGREES: 10.0
+TRANSLATE: 0.1
+SCALE: 0.5
+
+# Validation
+VAL_SPLIT: 0.2
+PATIENCE: 10  # Early stopping patience
+SAVE_BEST: true
+SAVE_PERIOD: 5
+
+# Optimization
+OPTIMIZER: "SGD"
+DEVICE: "0"  # GPU ID or -1 for CPU
+WORKERS: 4
+SEED: 42
+
+# Output
+OUTPUT_DIR: "../../05_results/training/"
+SAVE_TENSORBOARD: true
+SAVE_WEIGHTS: true

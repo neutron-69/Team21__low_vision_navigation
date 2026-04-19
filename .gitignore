@@ -1,0 +1,66 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+03_code/.venv/
+03_code/venv/
+03_code/env/
+03_code/ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+**/__pycache__/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+# Ignore raw data files and videos to avoid pushing large files to GitHub
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Ignore generated outputs
+code/vlm-navigation-assistant/outputs/
+03_code/outputs/
+03_code/src/outputs/
+05_results/figures/outputs/
+
+
+!results/*.csv
+
+!data/.gitkeep
+
+# Ignore model weights if any
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+03_code/src/models/weights/
+03_code/MiDaS/
+MiDaS/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+**/.ipynb_checkpoints/

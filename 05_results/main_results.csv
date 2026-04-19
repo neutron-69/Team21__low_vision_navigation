@@ -1,0 +1,62 @@
+Metric,Scope,Value
+Precision,Overall,0.723
+Recall,Overall,0.497
+mAP@50,Overall,0.542
+mAP@50-95,Overall,0.351
+Precision,person,0.783
+Recall,person,0.473
+mAP@50,person,0.548
+mAP@50-95,person,0.315
+Precision,rider,0.798
+Recall,rider,0.518
+mAP@50,rider,0.576
+mAP@50-95,rider,0.339
+Precision,car,0.826
+Recall,car,0.626
+mAP@50,car,0.691
+mAP@50-95,car,0.487
+Precision,truck,0.735
+Recall,truck,0.599
+mAP@50,truck,0.652
+mAP@50-95,truck,0.476
+Precision,bus,0.835
+Recall,bus,0.652
+mAP@50,bus,0.730
+mAP@50-95,bus,0.556
+Precision,motorcycle,0.806
+Recall,motorcycle,0.627
+mAP@50,motorcycle,0.676
+mAP@50-95,motorcycle,0.411
+Precision,bicycle,0.439
+Recall,bicycle,0.475
+mAP@50,bicycle,0.427
+mAP@50-95,bicycle,0.263
+Precision,autorickshaw,0.809
+Recall,autorickshaw,0.654
+mAP@50,autorickshaw,0.717
+mAP@50-95,autorickshaw,0.519
+Precision,animal,0.622
+Recall,animal,0.244
+mAP@50,animal,0.282
+mAP@50-95,animal,0.145
+Precision,traffic light,0.657
+Recall,traffic light,0.248
+mAP@50,traffic light,0.283
+mAP@50-95,traffic light,0.136
+Precision,traffic sign,0.642
+Recall,traffic sign,0.349
+mAP@50,traffic sign,0.384
+mAP@50-95,traffic sign,0.211
+Latency (ms),Preprocess,0.5
+Latency (ms),Inference,12.1
+Latency (ms),Postprocess,0.8
+Latency (ms),Total Pipeline (CPU single image),315
+Latency (ms),Detection,100
+Latency (ms),Depth Estimation,200
+Latency (ms),Spatial Reasoning,10
+Latency (ms),Navigation Planner,5
+Training,Epochs,25
+Training,Batch Size,16
+Training,Input Resolution,640x640
+Training,Validation Images,10224
+Training,Validation Instances,119895

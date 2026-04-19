@@ -1,0 +1,64 @@
+"""Default configuration for Vision-Based Navigation Assistant"""
+
+# Hardware & Environment
+DEVICE: "cuda"  # cuda or cpu
+USE_GPU: true
+
+# Model Paths
+DETECTOR_WEIGHTS: "models/weights/idd_best.pt"
+DEPTH_MODEL_TYPE: "dpt_levit_224"
+DEPTH_WEIGHTS: "MiDAS/weights/dpt_levit_224.pt"
+
+# Object Detection
+DETECTION_CONF_THRESH: 0.2
+DETECTION_IOU_THRESH: 0.55
+DETECTION_PROFILE: "balanced"  # fast, balanced, safety-first
+MAX_DETECTIONS: 24
+
+# Depth Estimation
+DEPTH_RESOLUTION: [384, 384]
+DEPTH_NORMALIZE: true
+DEPTH_SMOOTH_ALPHA: 0.3
+
+# Spatial Reasoning
+FOV_AWARE_THRESHOLDS: true
+VERY_CLOSE_THRESHOLD: 0.60
+NEAR_THRESHOLD: 0.40
+MODERATE_THRESHOLD: 0.18
+
+# Object Tracking
+TRACKER_IOU_THRESHOLD: 0.25
+TRACKER_MAX_AGE: 6
+TRACKER_MIN_HITS: 1
+
+# Temporal Processing
+TEMPORAL_SMOOTHING_WINDOW: 3
+TEMPORAL_DECAY_ALPHA: 0.95
+
+# Road Detection
+ROAD_DETECT_INTERVAL: 3
+CORRIDOR_MIN_WIDTH: 10
+WALKABLE_DEPTH_RATIO: 0.6
+
+# Navigation Planning
+ENABLE_CORRIDOR_GUIDANCE: true
+ENABLE_EDGE_GUIDANCE: true
+TTS_GATING_ENABLED: true
+
+# Video/Inference Settings
+FRAME_SAMPLE_INTERVAL_MS: 300
+RESIZE_SCALE: 0.6
+ADAPTIVE_SAMPLING: true
+
+# Output Settings
+OUTPUT_VIDEO_FORMAT: "mp4"
+OUTPUT_VIDEO_FPS: 10
+SAVE_FRAMES: false
+DISPLAY_OVERLAY: true
+DISPLAY_METRICS: true
+
+# Text-to-Speech
+TTS_ENABLED: true
+TTS_ENGINE: "pyttsx3"
+TTS_RATE: 150
+TTS_VOLUME: 1.0

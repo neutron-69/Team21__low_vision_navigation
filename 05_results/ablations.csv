@@ -1,0 +1,7 @@
+Experiment,Component Removed,mAP@50,mAP@50-95,Hazard Recall,Distance Accuracy,Walkable IoU,Avg Latency (ms),Flicker Rate,Notes
+Full Pipeline,None (baseline),0.542,0.351,97.9%,92.8%,0.407,84.6,0.39,All modules active; best balance of recall and distance accuracy
+No Temporal Smoothing,3-frame sliding window,-,-,98.9%,88.2%,0.440,79.3,0.29,Smoothing removed; slightly better recall but lower distance accuracy
+No FOV-Aware Depth,FOV-adaptive thresholds,-,-,96.7%,0.0%,0.442,84.3,0.17,Falls back to pixel-position heuristic; distance classification fails completely (0% accuracy)
+No Road Detection,RoadDetector module,-,-,100.0%,86.9%,0.444,81.4,0.23,Loses walkable corridor guidance
+No DeepSORT Tracking,ObjectTracker + TemporalReasoner,-,-,100.0%,88.7%,0.445,80.7,0.48,No persistent IDs or motion vectors; highest flicker rate (0.48); cannot detect approaching objects
+COCO Pretrained YOLO,IDD fine-tuning,0.389,0.224,-,-,-,-,-,Standard YOLOv8n on COCO; misses autorickshaw/rider/animal; mAP drops 28% (requires Kaggle eval)

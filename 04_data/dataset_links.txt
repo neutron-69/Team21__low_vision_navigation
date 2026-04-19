@@ -1,0 +1,11 @@
+IDD-detection dataset download link:
+https://idd.insaan.iiit.ac.in/dataset/download/
+
+Access note: Access to the Indian Driving Dataset (IDD) is managed primarily through the official IIIT-Hyderabad portal. It is an open-access dataset intended for research in unstructured driving scenarios. Users must register for an account at the official website before downloading or requesting access:
+http://idd.insaan.iiit.ac.in/
+
+IDD Detection dataset details & statistics: 
+https://idd.insaan.iiit.ac.in/dataset/details/
+
+Code used for data evaluation by INSAAN:
+https://github.com/AutoNUE/public-code

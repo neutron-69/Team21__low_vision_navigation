@@ -1,0 +1,21 @@
+Team Details:
+Team - 21:
+1. Ishika Goyal - 2022B3A70549P - f20220549@pilani.bits-pilani.ac.in
+2. Udit Agarwal - 2023A8PS0708P - f20230708@pilani.bits-pilani.ac.in
+3. Mohul Batra - 2023A1PS0164P - f20230164@pilani.bits-pilani.ac.in
+
+Course and Faculty Details:
+Course ID and Name: CS F425 - Deep Learning 
+Instructor In-Charge: Mr. Pratik Narang
+Assigned Mentor: Mr. Prashant Trivedi
+
+Topic - 15
+Project Title: Vision–Language Models for Low-Vision Navigation Assistance
+
+Problem Statement:
+Visually impaired users need reliable spatial descriptions rather than generic captions. This project explores whether VLMs can generate actionable, spatially grounded descriptions of real-world scenes, especially cluttered Indian street environments.
+
+Expected Research Outcome:
+A navigation-oriented captioning system that prioritizes hazards and spatial relations. 
+Research Angle: Spatial reliability metrics for captions. 
+Demo: Camera image → Spoken navigation cues.

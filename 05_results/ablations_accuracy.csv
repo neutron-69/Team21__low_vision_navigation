@@ -1,0 +1,6 @@
+experiment,frames,true_hazard_frames,hazard_recall,false_alarm_rate,distance_accuracy,walkable_iou,missed_hazards,false_alarms
+Full Pipeline,60,46,0.957,0.143,0.865,0.445,2,2
+No Temporal Smoothing,60,44,0.977,0.0,0.854,0.448,1,0
+No FOV-Aware Depth,60,42,1.0,0.0,0.0,0.449,0,0
+No Road Detection,60,42,1.0,0.111,0.851,0.449,0,2
+No DeepSORT Tracking,60,41,1.0,0.0,0.861,0.45,0,0
